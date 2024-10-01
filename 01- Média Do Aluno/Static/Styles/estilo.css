@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --fonte-primaria: "Montserrat", sans-serif;
+}
+
+/*eliminar margens e preenchimento da pg*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+}
+/*pg cadastro*/
+.validar_nota{
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+}
+
+
+nav {
+    background-color: rgb(206, 206, 206);  
+    padding: 15px;
+    text-align: center;  
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);  
+}
+nav a {
+    color: rgb(0, 0, 0);  
+    text-decoration: none;  
+    font-weight: bold;
+    margin: 40px 15px;  
+    font-size: 24px;
+    padding: 8px 46px;
+    border-radius: 18px;
+    transition: background-color 0.3s ease;  
+    font-family: var(--fonte-primaria);
+}
+
+
+.lancar_nota{
+    font-size: 23px;
+    font-family: var(--fonte-primaria);
+    text-align: center;
+
+}
+
+/*estetica do formulario*/
+.validar_nota{
+    display: grid;
+    grid-template-columns: auto;
+    font-family: var(--fonte-primaria);
+    padding: 15px;
+    margin-top: 100px;
+    margin-right: 780px;
+    
+}
+/*margem do titulo e do input */
+.lancar_nota h2{
+    margin-bottom: 95px;
+    
+}
+
+.consultar_nota label{
+    font-family: var(--fonte-primaria);
+    font-weight: 500px;
+    padding-left: 10px;
+    padding-bottom: 3px;
+
+    
+}
+/*só input com texto*/
+.validar_nota input[type='text']{
+    margin-bottom: 20px;
+    font-size: 28px;
+    border-radius: 7px;
+    padding: 5px 15px;
+    
+
+}
+/*cor quando passar o mouse*/
+.validar_nota input[type='text']:hover{
+    background-color: rgba(201, 199, 199, 0.55);
+}
+/*quando usar tab mudar de cor*/
+.validar_nota input[type='text']:focus{
+    background-color: rgb(201, 199, 199, 0.55);
+}
+
+
+
+.campo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .campo label {
+    width: 150px; /* Ajuste essa largura conforme necessário */
+    font-weight: bold;
+  }
+  
+  .campo input {
+    flex: 1; /* Isso permite que o input ocupe o espaço restante */
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  form {
+    max-width: 400px; /* Ajuste a largura do formulário conforme necessário */
+    margin: auto;
+}
+  
+
+
+
+/*botao*/
+.botao_enviar{
+    font-size: 20px;
+    background-color: rgb(210, 210, 210);
+    padding: 10px 20px;
+    border-radius: 30px;
+    border-radius: 1.5px solid black;
+    cursor: pointer;
+    font-family: var(--fonte-primaria);
+}
+
+.botao_enviar:hover{
+    background-color: rgb(123, 131, 133);
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+/*pg consulta*/
+
+.consulta_produtos{
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+    margin-top: 30px;
+    font-family: var(--font-primaria);
+}
+
+.consulta_produtos table{
+    border: 0.5px solid black;
+    background-color: black;
+}
+
+.consulta_produtos th{
+    padding: 10px 20px;
+    background-color: rgb(225, 220, 213);
+}
+
+.consulta_produtos td{
+    background-color: white;
+    padding: 10px 10px;
+}
+
+nav {
+    padding: 0;
+    position: relative; /* Adicionando posição relativa ao nav */
+}
+
+nav li {
+    display: inline-block;
+    position: relative; /* Adicionando posição relativa ao li */
+}
+
+nav li a {
+    display: inline-block;
+    color: #49ef02;
+    text-decoration: none;
+    text-align: center;
+    padding: 2px;
+}
+
+nav li a:hover {
+    filter: drop-shadow(2px 2px 20px white);
+}
+    
+.dropdown-menu {
+    background-color: rgb(194, 189, 184);
+    font-family: var(--font-primaria);
+    
+    display: none;
+    padding: 10px;
+    position: absolute; /* Mudando para posição absoluta */
+    margin-left: -5px; /* Ajustando a margem */
+    margin-bottom: -200;
+}
+
+.dropdown-menu a {
+    display: block;
+    color: black;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block; /* Mostrando o menu ao passar o mouse */
+}
+
+.dropdown {
+    z-index: 2; /* Garantindo que o dropdown fique acima dos outros elementos */
+}
+
+.dropdown img {
+    width: 60px;
+    height: 60px;
+}
+
+
